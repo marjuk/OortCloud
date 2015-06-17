@@ -2,24 +2,45 @@
 <html lang="en">
   <head>
      <% include partials/pages/head.ejs %>  
+
+
   
     
   </head>
   <body>
-    
-          <% include partials/pages/header.ejs %> 
+         <% include partials/pages/header.ejs %> 
+          
+<!-- Name and 5 Github Projects that I am doing with links --> 
+      <% include partials/content/github.ejs %> 
 
-    
-    <h1> <%= title %>  </h1>
-    <p> The mama pajama rolled out of bed
-And she ran to the police station
-When Ihe papa found out he began to shout
-And he started the investigation
-</p>
+<!-- Stanford SVIA and Acceptance picture Upload --> 
+      <% include partials/content/stanford.ejs %> 
+
+      <% include partials/content/inspiration.ejs %> 
+
+<!-- Mad Max Review, Tom Kapinos Review --> 
+      <% // include partials/content/reviews.ejs %>
+
+ 
 
 
-      <% include partials/pages/footer.ejs %> 
+      <% //include partials/pages/footer.ejs %> 
       <% include partials/pages/jsdefaults.ejs %> 
     
   </body>
 </html>
+
+<style> 
+
+body { 
+    color: #3a3a3a;
+    font-family: 'Gentium Book Basic', 'Palatino', Georgia, serif;
+    font-size: 16pt;
+    line-height: 160%;
+    font-weight: 400;
+    text-align: left;
+} 
+
+
+
+</style>
