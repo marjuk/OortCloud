@@ -6,14 +6,14 @@ app.set('view engine', 'ejs');//setting the ejs engine
 
 app.get('/', function(req,res){
     
-    res.render('default', { title: "Oort Cloud"}); 
+    res.render('default', { title: "Marjuk"}); 
     
 }); 
 
-app.get('/me', function(req,res){
+app.get('/update', function(req,res){
     
    // var id = req.params.id; 
-    res.render("partials/pages/footer"); 
+    res.render("partials/pages/update"); 
     
 }); 
 
@@ -21,7 +21,7 @@ app.get('/lotr', function(req,res){
     
    // var id = req.params.id; var title = req.params.title;  res.send("Marjuk" + id + title); 
    
-   res.render("partials/content/lotr"); 
+   res.send("lotr fan");
     
 }); 
 
